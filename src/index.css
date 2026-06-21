@@ -1,0 +1,61 @@
+:root {
+  /* Maverick Automotive brand palette — matched to logo */
+  --brand-purple: #5c4678;
+  --brand-purple-dark: #4b2c5e;
+  --brand-purple-deep: #2e2238;
+  --brand-cream: #f5f1e8;
+  --brand-cream-dark: #e8e0d0;
+  --brand-black: #1c1520;
+  --text-muted: #6b5f74;
+  --text-on-purple: #f5f1e8;
+
+  /* Aliases used across components */
+  --purple: var(--brand-purple);
+  --purple-dark: var(--brand-purple-dark);
+  --cream: var(--brand-cream);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font-family: var(--sans);
+  line-height: 1.5;
+  color: var(--brand-black);
+  background: var(--brand-cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keep section titles visible below sticky header */
+  scroll-padding-top: 88px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
